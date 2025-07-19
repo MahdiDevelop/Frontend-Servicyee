@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils"
-import { Button } from "@/components/ui/button"
 import React from "react"
+import { Button } from "@/components/ui/button"
 import {
   Card,
   CardContent,
@@ -11,7 +11,7 @@ import {
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 
-export function LoginForm({
+ function LoginForm({
   className,
   ...props
 }: React.ComponentProps<"div">) {
@@ -95,3 +95,5 @@ export function LoginForm({
     </div>
   )
 }
+
+export default LoginForm
