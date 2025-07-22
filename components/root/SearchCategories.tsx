@@ -31,7 +31,7 @@ const Categories = () => {
       </button>
       {showCategories && (
         <div className="absolute z-20 mt-1 w-full bg-white dark:bg-gray-800 rounded-[4px] shadow-lg border border-gray-200 dark:border-gray-700 py-1 max-h-96 overflow-y-auto">
-          <Link href="/homeservices" className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700">Home Services</Link>
+          <Link href="https://marketplace-vhbe.onrender.com/" className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700">Home Services</Link>
           <Link href="/beauty" className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700">Food & Grocery</Link>
           <Link href="/beauty" className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700">Travel</Link>
           <Link href="/beauty" className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700">Beauty & Spas</Link>
