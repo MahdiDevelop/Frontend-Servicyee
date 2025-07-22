@@ -9,7 +9,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <div className="min-h-screen xl:flex">
+    <div className="">
       <MenuBar/>
       {children}
       <Footer/>
