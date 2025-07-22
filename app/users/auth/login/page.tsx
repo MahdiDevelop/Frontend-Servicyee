@@ -11,7 +11,6 @@ export const metadata = {
   title: "Login | Serviceyee",
   description: "Secure login page for users to access their dashboard.",
 }
-
 export default function LoginPage() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-center bg-background p-6 md:p-10">
