@@ -1,16 +1,10 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
-};
-module.exports = {
-  images: {},
-  theme: {
-    extend: {
-      animation: {
-        "spin-slow": "spin 5s linear infinite",
-      },
-    },
+  images: {
+    domains: [], // add domains if needed
   },
+  // i18n is removed if using App Router
 };
+
 export default nextConfig;

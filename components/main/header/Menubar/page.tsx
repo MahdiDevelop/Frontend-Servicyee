@@ -7,7 +7,8 @@ import { Switch } from '@/components/ui/switch';
 import Location from '@/components/root/SearchLocation';
 import Categories from '@/components/root/SearchCategories';
 import MobileNavbar from '@/components/main/header/MobileNavbar/page';
-import DesktopNavbar from '@/components/main/header/DesktopNavbar/page'; // Import DesktopNavbar
+import DesktopNavbar from '@/components/main/header/DesktopNavbar/page'; 
+import LanguageSwitcher from '@/components/common/LanguageSwitcher';
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -57,9 +58,9 @@ const Header = () => {
       {/* Top utility bar */}
       <div className="bg-gray-50 dark:bg-gray-800 text-gray-600 dark:text-gray-300 text-xs px-4 py-2 hidden md:block border-b dark:border-gray-700">
         <div className="container mx-auto flex justify-end space-x-6">
-          <span className="hover:text-[#0077B6] dark:hover:text-[#48CAE4] cursor-pointer">Download App</span>
-          <span className="hover:text-[#0077B6] dark:hover:text-[#48CAE4] cursor-pointer">Sell on Marketplace</span>
-          <span className="hover:text-[#0077B6] dark:hover:text-[#48CAE4] cursor-pointer">English</span>
+          <span className="hover:text-[#0077B6] dark:hover:text-[#48CAE4] cursor-pointer">
+            <LanguageSwitcher></LanguageSwitcher>
+          </span>
         </div>
       </div>
 
@@ -100,7 +101,7 @@ const Header = () => {
               <FaRegHeart className="text-lg mb-0.5" />
               <span className="text-xs text-gray-900 dark:text-gray-300 group-hover:text-[#0077B6] dark:group-hover:text-[#48CAE4]">Wishlist</span>
             </button>
-            <Link href="/signin" className="hidden md:flex flex-col items-center p-2 text-gray-800 dark:text-gray-300 hover:text-[#0077B6] dark:hover:text-[#48CAE4] group">
+            <Link href="/login" className="hidden md:flex flex-col items-center p-2 text-gray-800 dark:text-gray-300 hover:text-[#0077B6] dark:hover:text-[#48CAE4] group">
               <FaRegUser className="text-lg mb-0.5" />
               <span className="text-xs text-gray-900 dark:text-gray-300 group-hover:text-[#0077B6] dark:group-hover:text-[#48CAE4]">Account</span>
             </Link>
